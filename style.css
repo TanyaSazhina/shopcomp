@@ -1,0 +1,197 @@
+html,body {
+    height: 100%;
+}
+
+img {
+    max-width: 95%;
+    display: block;
+    border-radius: 25px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.admin-block, .admin_busket {
+    flex: 1 0 auto;
+}
+footer {
+    flex: 0 0 auto;
+}
+.main-basket-left-block {
+    margin: 0 auto;
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+gap: 20px;
+justify-content: space-around;
+}
+.main-basket-left-item {
+    width: 30%;
+    background: #FFFFFF;
+box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
+border-radius: 20px;
+padding: 30px 30px 40px 30px;
+margin-bottom: 24px;
+}
+.main-basket-left-item__img {
+    padding: 0 10px 20px 10px;
+}
+.main-basket-left-item__h3 h3 {
+font-family: 'arial';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 19px;
+color: #1C1C1C;
+}
+.main-basket-left-item-block-counter {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 17px;
+    align-items: center;
+
+}
+
+.main-basket-left-item-block__button button {
+    border: none;
+    background-color: #ffffff;
+    width: 15px;
+    height: 18px;
+}
+.main-basket-left-item-block__button span {
+    border: 1px solid #E2E2E2;
+border-radius: 5px;
+    padding: 5px;
+}
+.main-basket-left-item-block__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-basket-left-item-count {
+font-family: 'arial';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 29px;
+color: #1C1C1C;
+}
+#busket-delete {
+font-family: 'arial';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 100%;
+color: #C14231;
+border: none;
+background-color: #FFFFFF;
+margin-top: 33px;
+}
+.link-footer a {
+    font-style: normal;
+line-height: 17px;
+    text-decoration: none;
+    font-family: 'arial';
+    color: #ffffff;
+    font-size: 14px ;
+    font-weight: 300;
+    padding: 0 38px 0 36px;
+}
+
+/* Админ панель */
+
+.admin-nav__a {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    align-items: center;
+    margin: 25px auto;
+}
+.admin-nav__a a {
+    width: 100%;
+    padding: 15px;
+    margin-top: 25px;
+    border: 3px dashed rgb(107, 9, 9);
+    background-color: rgb(75, 4, 4);
+    color: rgb(233, 231, 231);
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 25px;
+}
+/* Корзина администратора */
+
+.admin_busket {
+    width: 100%;
+}
+.admin-busket-block {
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.busket-inner {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 330px;
+}
+.busket-inner p {
+    font-size: 20px;
+}
+.busket-inner img {
+    width: 95%;
+    display: block;
+    border-radius: 25px;
+    height: 250px;
+}
+.admin-status {
+    font-size: 30px;
+}
+.button-change {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.button-change button {
+    padding: 5px;
+    border: 3px solid rgb(95, 3, 3);
+    background-color: rgb(107, 9, 9);
+    color: white;
+    border-radius: 25px;
+}
+.admin-name, .admin-tovar {
+    display: flex;
+    justify-content: space-between;
+}
+/* Добавление товара */
+.tovar-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+.tovar-block {
+    margin-top: 75px;
+    margin-bottom: 75px;
+    display: flex;
+    justify-content: center;
+
+}   
+.tovar-block input {
+margin-top: 25px;
+padding: 5px 5px 5px 5px;
+border: 1px solid black;
+border-radius: 25px;
+}
+.tovar-block button {
+margin: 25px auto;
+border-radius: 25px;
+padding: 5px;
+    background-color: #C14231;
+    color: #1C1C1C;
+font-size: 20px;    
+width: 50%;
+}

@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        font-family: 'Roboto Slab', serif;
+    }
+}
+
+@layer components {
+    .container {
+        @apply max-w-[1080px]
+    }
+    .btn {
+        @apply max-w-fit inline-block mt-6 py-[10px] px-8 shadow-custopred bg-lightred rounded-2xl text-white text-xl tracking-tight
+    }
+}
+
+.burger{
+    height: 15px;
+    position: relative;
+    width: 30px;
+}
+
+.burger-line{
+    display: flex;
+    height: 3px;
+    width: 30px;
+    background: #D70026;
+    transition: .3s all ease;   
+    border-radius: 5px;
+}
+
+.top-line{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.mid-line{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 30px;
+    transform: translate(0, -50%);
+}
+
+.bottom-line{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+    
+.burger.active > .top-line {
+    transform: translateY(9px) rotate(45deg);
+    transition: .3s all ease;
+}
+
+.burger.active > .mid-line {
+    opacity: 0;
+    transition: .3s all ease;   
+}
+
+.burger.active > .bottom-line{
+    transform: translateY(-5px) rotate(-45deg);
+    transition: .3s all ease;
+}
